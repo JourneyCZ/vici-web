@@ -1,0 +1,87 @@
+html, body {
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  font-family: Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+
+  // 自定义 AntDesign 相关样式
+  // 按钮 
+  .ant-btn {
+    height: 16rem;
+    font-size: 7rem;
+    line-height: 1em;
+    padding: 2rem 7rem;
+
+    &.ant-btn-sm {
+      height: 12rem;
+      font-size: 6rem;
+      padding: 1rem 6rem;
+    }
+    &.ant-btn-lg {
+      height: 20rem;
+      font-size: 8rem;
+      padding: 3rem 8rem;
+    }
+  }
+}
+
+// 自定义滚动条
+* {
+  &::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+  }
+}
+
+// 根据屏幕宽度，定义根元素字体大小
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 1px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 1.3px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 1.4px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 1.5px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  html {
+    font-size: 1.6px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 1.7px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  html {
+    font-size: 1.8px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 1.9px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 2px;
+  }
+}
