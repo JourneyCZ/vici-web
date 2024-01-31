@@ -10,6 +10,7 @@
       </div>
     </div>
     <div class="view-content">
+      
     </div>
   </div>
 </template>
@@ -29,7 +30,7 @@
       width: 100%;
       height: 33vw;
       min-height: 500px;
-      background: linear-gradient(45deg, #d6e7ff, 50%, rgba(214,231,255,0));
+      background: linear-gradient(45deg, theme('colorLight'), 50%, rgba(214,231,255,0));
 
       .banner-content {
         display: flex;

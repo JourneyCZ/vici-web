@@ -20,11 +20,19 @@ export default defineConfig({
       ],
     }),
   ],
+  build: {
+      rollupOptions: {
+          input: {
+              index: path.resolve(__dirname, 'index.html'),
+              data: path.resolve(__dirname, 'data.html'),
+          },
+      },
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, 'src'), // 路径别名
     },
-    extensions: ['.js', '.json'] // 使用路径别名时想要省略的后缀名
+    extensions: ['.js', '.json', '.vue'] // 使用路径别名时想要省略的后缀名
   },
   css: {
     /* CSS 预处理器 */
