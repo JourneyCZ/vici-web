@@ -1,8 +1,9 @@
 <script setup>
+import Layout from './components/Layout/index.vue'
 </script>
 
 <template>
-  <router-view class="page-container"></router-view>
+  <Layout />
 </template>
 
 <style scoped lang="scss">

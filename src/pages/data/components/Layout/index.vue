@@ -7,7 +7,10 @@
     <div :class="['theme-base', themeClass]">
       <div class="page-container">
         <Header class="page-header" @themeChange="themeChange" />
-        <router-view class="page-main" />
+        <div class="page-body">
+          <Left class="page-left" />
+          <router-view class="page-main" />
+        </div>
       </div>
     </div>
   </a-config-provider>
@@ -18,6 +21,7 @@ import { computed } from 'vue'
 import { useStore } from 'vuex'
 import { theme as antdvTheme } from 'ant-design-vue';
 import Header from './Header.vue';
+import Left from './Left.vue';
 
 // 获取状态管理仓库
 const store = useStore()
@@ -53,14 +57,26 @@ const antdvAlgorithm = computed(() => theme.value === 'dark' ? antdvTheme.darkAl
 
     .page-header {
       width: 100%;
-      max-width: 1920px;
       height: 64px;
-      padding: 0 5%;
+      padding: 0 20rem;
+    }
+
+    .page-body {
+      flex: auto;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .page-left {
+      flex: none;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
     .page-main {
       flex: auto;
-      width: 100%;
+      min-width: 100px;
       overflow-x: hidden;
       overflow-y: auto;
     }
