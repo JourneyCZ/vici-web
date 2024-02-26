@@ -28,6 +28,11 @@ const Theme = computed(() => store.state.base.theme)
 let current = ref(['home']);
 const menus = ref([
   {
+    key: '/data/overview',
+    label: '首页',
+    title: '首页',
+  },
+  {
     key: '/data/dashbord',
     label: '数据看板',
     title: '数据看板',
@@ -47,9 +52,19 @@ function menuClick (menu) {
 </script>
 
 <style lang="scss" scoped>
-.left-container {
-  .left-menu {
-    background-color: rgba(0, 0, 0, 0);
+@include themeMixin {
+  .left-container {
+    .left-menu {
+      font-size: 12rem;
+      background-color: rgba(0, 0, 0, 0);
+
+      :deep(.ant-menu-item-selected) {
+        width: calc(100% - 4px);
+        background-color: theme('colorBgLayout');
+        border-radius: 8px 0 0 8px;
+        margin-right: 0;
+      }
+    }
   }
 }
 </style>

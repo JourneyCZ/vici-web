@@ -5,7 +5,7 @@
         <div class="banner-title">让数据栩栩如生</div>
         <div class="banner-sub-title">企业级数据可视化解决方案，让人们在数据世界里获得视觉化思考能力</div>
         <div class="banner-btns">
-          <a-button type="primary" size="large">立即体验</a-button>
+          <a-button type="primary" size="large">立即体验</a-button>  
         </div>
       </div>
     </div>
@@ -117,7 +117,7 @@ const activeScene = ref('operation')
 
         .banner-sub-title {
           width: 100%;
-          font-size: 10rem;
+          font-size: 12rem;
           line-height: 2;
           text-align: left;
         }
@@ -150,13 +150,13 @@ const activeScene = ref('operation')
           min-height: 200rem;
 
           .product-img {
-            width: 70%;
+            width: 75%;
           }
 
           .product-intro {
-            width: 30%;
+            width: 25%;
             font-size: 12rem;
-            line-height: 2em;
+            line-height: 1.5em;
             text-indent: 2em;
           }
         }

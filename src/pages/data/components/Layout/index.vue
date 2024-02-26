@@ -66,6 +66,7 @@ const antdvAlgorithm = computed(() => theme.value === 'dark' ? antdvTheme.darkAl
       display: flex;
       justify-content: space-between;
       width: 100%;
+      overflow: hidden;
     }
 
     .page-left {
@@ -77,6 +78,7 @@ const antdvAlgorithm = computed(() => theme.value === 'dark' ? antdvTheme.darkAl
     .page-main {
       flex: auto;
       min-width: 100px;
+      background-color: theme('colorBgLayout');
       overflow-x: hidden;
       overflow-y: auto;
     }

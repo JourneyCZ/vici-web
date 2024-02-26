@@ -5,7 +5,12 @@ const router = createRouter({
   routes: [
     {
       path: '/data',
-      redirect: '/data/dashbord',
+      redirect: '/data/overview',
+    },
+    {
+      path: '/data/overview',
+      name: '首页',
+      component: () => import('../views/overview/index.vue'),
     },
     {
       path: '/data/dashbord',

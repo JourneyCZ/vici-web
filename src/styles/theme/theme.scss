@@ -9,13 +9,19 @@ $base:(
 $themes:(
   "dark":(
     colorBgBase: #031B3F,
+    colorBgElevated: #253269,
+    colorBgLayout: #314D79,
     colorTextBase: #fff,
     colorCover: #002f70,
+    colorShadow: #22447a,
   ),
   "light":(
     colorBgBase: #fff,
+    colorBgElevated: #fff,
+    colorBgLayout: #f5f5f5,
     colorTextBase: #333,
     colorCover: #d6e7ff,
+    colorShadow: #efefef,
   ),
 );
 

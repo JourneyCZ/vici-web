@@ -7,20 +7,19 @@ html, body {
   // 自定义 AntDesign 相关样式
   // 按钮 
   .ant-btn {
-    height: 16rem;
-    font-size: 7rem;
-    line-height: 1em;
-    padding: 2rem 7rem;
+    height: auto !important;
+    font-size: 12rem !important;
+    line-height: 1em !important;
+    padding: 3rem 7rem;
+    margin: 0 5rem;
 
     &.ant-btn-sm {
-      height: 12rem;
-      font-size: 6rem;
-      padding: 1rem 6rem;
+      font-size: 10rem !important;
+      padding: 2rem 6rem;
     }
     &.ant-btn-lg {
-      height: 20rem;
-      font-size: 8rem;
-      padding: 3rem 8rem;
+      font-size: 12rem !important;
+      padding: 4rem 8rem;
     }
   }
 }
@@ -47,41 +46,26 @@ html, body {
 }
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 1.3px;
-  }
-}
-@media screen and (min-width: 1300px) {
-  html {
-    font-size: 1.4px;
+    font-size: 1px;
   }
 }
 @media screen and (min-width: 1400px) {
   html {
-    font-size: 1.5px;
-  }
-}
-@media screen and (min-width: 1500px) {
-  html {
-    font-size: 1.6px;
+    font-size: 1.1px;
   }
 }
 @media screen and (min-width: 1600px) {
   html {
-    font-size: 1.7px;
-  }
-}
-@media screen and (min-width: 1700px) {
-  html {
-    font-size: 1.8px;
+    font-size: 1.2px;
   }
 }
 @media screen and (min-width: 1800px) {
   html {
-    font-size: 1.9px;
+    font-size: 1.3px;
   }
 }
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 2000px) {
   html {
-    font-size: 2px;
+    font-size: 1.4px;
   }
 }

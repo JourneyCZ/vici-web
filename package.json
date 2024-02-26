@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@antv/g2": "^5.1.15",
     "ant-design-vue": "^4.1.0",
     "axios": "^1.6.5",
     "vue": "^3.3.11",
