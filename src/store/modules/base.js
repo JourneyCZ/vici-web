@@ -1,6 +1,6 @@
 const base = {
   state: () => ({
-    theme: 'dark'
+    theme: 'light'
   }),
   mutations: {
     setTheme (state, theme) {
